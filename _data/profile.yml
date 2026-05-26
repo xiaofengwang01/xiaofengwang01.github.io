@@ -1,0 +1,54 @@
+primary_name: "Xiaofeng Wang (汪晓峰)"
+secondary_name: ""
+navbar_name: "Xiaofeng Wang"
+
+positions:
+- name: Master's Student
+- name: Institute of Computing Technology, Chinese Academy of Sciences
+  logo: /assets/images/badges/cas_logo.png
+
+email: "wangxiaofeng25@mails.ucas.ac.cn"
+# cv_link: link-to-your-cv-file
+# gscholar: your_google_scholar_id
+github: xiaofengwang01
+# twitter: your_twitter_id
+# linkedin: your-linked-in-id
+# orcid: 0000-0000-0000-0000
+
+short_bio_text_justify: false
+short_bio: >-
+  <p>
+    I am a Master's student at the 
+    <a href="http://www.ict.ac.cn/" target="_blank">Institute of Computing Technology (ICT)</a>, 
+    <a href="https://www.cas.cn/" target="_blank">Chinese Academy of Sciences (CAS)</a>.
+    My research focuses on <b>code generation with large language models (LLMs)</b>.
+  </p>
+  <p>
+    Prior to this, I received my B.E. degree in Automation from 
+    <a href="https://www.whu.edu.cn/" target="_blank">Wuhan University</a> in 2025.
+  </p>
+
+portrait_url: /assets/images/photos/portrait.jpg
+# portrait_caption: >-
+#   Optional caption for the portrait photo.
+
+education:
+- name: Institute of Computing Technology, CAS
+  logo: /assets/images/badges/cas_logo.png
+  position: >- 
+    Master's Student
+  date: Sep. 2025 - present
+- name: Wuhan University
+  logo: /assets/images/badges/whu_logo.png
+  position: B.E. in Automation
+  date: Sep. 2021 - Jun. 2025
+
+# experience:
+# - name: Company Name
+#   logo: /assets/images/badges/logo.png
+#   position: Intern
+#   date: Jun. 2024 - Sep. 2024
+
+awards:
+# - name: Award Name
+#   date: 2024
