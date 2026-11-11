@@ -8,11 +8,11 @@ In the age of AI, everything below is handcrafted!!!
 
 
 
-If you follow open-source models, you may have noticed that several recent foundation models use linear attention, such as **Kimi K3, Kimi K3.1 Pro, and Qwen3.8-Flash-Next**.
+If you follow open-source models, you may have noticed that several recent foundation models use linear attention, such as [**Kimi K3**](https://huggingface.co/moonshotai/Kimi-K3), [**Kimi K3.1 Pro**](https://huggingface.co/moonshotai/Kimi-K3.1-Pro), and [**Qwen3.8-Flash-Next**](https://huggingface.co/Qwen/Qwen3.8-Flash-Next).
 
-I will use a series of condensed, hand-drawn explanations to explore the beauty of linear attention.
+I will use a series of concise, hand-drawn explanations to explore representative work on linear attention.
 
-Each post distills one original paper, and the posts build on one another logically.
+Each post distills one original paper, and the posts build on one another logically. By the end, you should have a solid understanding of today's most important linear-attention mechanisms—Kimi Delta Attention (KDA) and Gated DeltaNet—and be better prepared to follow how model architectures are evolving.
 
 Feedback is welcome at flying_xf@icloud.com.
 
