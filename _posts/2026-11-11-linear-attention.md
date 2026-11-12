@@ -6,6 +6,7 @@ description: >-
   A concise, hand-drawn guide to representative linear attention papers,
   from kernelized linear attention to gated DeltaNet and Kimi Linear.
 image: /assets/images/blog/linear-attention-social-card.png
+tags: ["linear attention", "model architecture"]
 ---
 
 In the age of AI, everything below is handcrafted!!!
@@ -22,7 +23,7 @@ Feedback is welcome at flying_xf@icloud.com.
 
 
 
-# Blog 1
+# Blog 1: Naive Linear Attention
 
 I want to start from the very beginning: the paper ["Transformers are RNNs: Fast Autoregressive Transformers with Linear Attention"](https://arxiv.org/abs/2006.16236).
 
@@ -30,13 +31,13 @@ The main contribution of this paper is a new kernel function that replaces the o
 
 ![Hand-drawn diagram for the first Linear Attention post](/assets/images/blog/kda-blog-1.svg)
 
-# Blog 2
+# Blog 2: Delta Rule
 
 The second post is about ["Linear Transformers Are Secretly Fast Weight Programmers"](https://arxiv.org/abs/2102.11174). Drawing on the **delta rule** proposed in early AI papers, it interprets linear attention as a key-value associative memory model and proposes **Delta Networks**.
 
 ![Hand-drawn diagram for the second Linear Attention post](/assets/images/blog/kda-blog-2.svg)
 
-# Blog 3
+# Blog 3: Gate Rule
 
 The third post is about ["Gated Linear Attention Transformers with Hardware-Efficient Training"](https://arxiv.org/abs/2312.06635). Its central idea is a **data-dependent gate** that lets the recurrent state forget information over time.
 
@@ -46,7 +47,7 @@ Beyond the gating formulation itself, the paper also tackles a systems question:
 
 ![Hand-drawn diagram for the third Linear Attention post](/assets/images/blog/kda-blog-3.svg)
 
-# Blog 4
+# Blog 4: Gated DeltaNet & Kimi Linear
 
 The fourth post is about ["Gated Delta Networks: Improving Mamba2 with Delta Rule"](https://arxiv.org/abs/2412.06464). It combines two ideas from the previous posts: the **delta rule** from Blog 2 and the **gate rule** from Blog 3.
 
