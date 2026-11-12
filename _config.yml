@@ -14,6 +14,11 @@
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
 baseurl: "" # root site, no subpath needed for username.github.io
+url: "https://xiaofengwang01.github.io"
+title: "Xiaofeng Wang"
+description: >-
+  Personal site and blog about large language model inference,
+  attention architectures, and efficient systems.
 
 # Build settings
 markdown: kramdown

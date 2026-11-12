@@ -1,0 +1,33 @@
+{% assign seo_title = page.title | default: site.title %}
+{% if seo_title != site.title %}
+  {% assign seo_title = seo_title | append: " | " | append: site.title %}
+{% endif %}
+{% assign seo_description = page.description | default: site.description %}
+{% assign seo_description = seo_description | strip_html | strip_newlines | truncate: 160 %}
+{% assign seo_image = page.image | default: '/assets/images/blog/social-card.png' %}
+{% assign seo_url = page.url | absolute_url %}
+
+<meta name="description" content="{{ seo_description }}">
+<link rel="canonical" href="{{ seo_url }}">
+
+<meta property="og:site_name" content="{{ site.title }}">
+<meta property="og:locale" content="en_US">
+{% if page.layout == 'blog_post' %}
+<meta property="og:type" content="article">
+{% else %}
+<meta property="og:type" content="website">
+{% endif %}
+<meta property="og:title" content="{{ seo_title }}">
+<meta property="og:description" content="{{ seo_description }}">
+<meta property="og:url" content="{{ seo_url }}">
+<meta property="og:image" content="{{ seo_image | absolute_url }}">
+<meta property="og:image:type" content="image/png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="{{ seo_title }}">
+
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="{{ seo_title }}">
+<meta name="twitter:description" content="{{ seo_description }}">
+<meta name="twitter:image" content="{{ seo_image | absolute_url }}">
+<meta name="twitter:image:alt" content="{{ seo_title }}">
