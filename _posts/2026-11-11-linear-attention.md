@@ -31,3 +31,21 @@ The main contribution of this paper is a new kernel function that replaces the o
 The second post is about ["Linear Transformers Are Secretly Fast Weight Programmers"](https://arxiv.org/abs/2102.11174). Drawing on the **delta rule** proposed in early AI papers, it interprets linear attention as a key-value associative memory model and proposes **Delta Networks**.
 
 ![Hand-drawn diagram for the second Linear Attention post](/assets/images/blog/kda-blog-2.svg)
+
+# Blog 3
+
+The third post is about ["Gated Linear Attention Transformers with Hardware-Efficient Training"](https://arxiv.org/abs/2312.06635). Its central idea is a **data-dependent gate** that lets the recurrent state forget information over time.
+
+The key design problem is how to parameterize this gate. A naive formulation can be parameter-inefficient; low-rank and scalar alternatives make different trade-offs; and GLA chooses a middle ground that supports efficient training. In the final recurrent equation, each key channel forgets at its own rate, giving the model per-channel forgetting.
+
+Beyond the gating formulation itself, the paper also tackles a systems question: how to reorganize linear-attention computation for greater parallelism. This series focuses on algorithms; I may cover operator-level implementations in a separate systems-oriented series.
+
+![Hand-drawn diagram for the third Linear Attention post](/assets/images/blog/kda-blog-3.svg)
+
+# Blog 4
+
+The fourth post is about ["Gated Delta Networks: Improving Mamba2 with Delta Rule"](https://arxiv.org/abs/2412.06464). It combines two ideas from the previous posts: the **delta rule** from Blog 2 and the **gate rule** from Blog 3.
+
+The result is a gated delta rule that preserves the correction behavior of the delta rule while adding a data-dependent forgetting mechanism. This direction leads naturally to later architectures such as ["Kimi Linear: An Expressive, Efficient Attention Architecture"](https://arxiv.org/abs/2510.26692), which combines channel-wise gating with per-head scalar decay.
+
+![Hand-drawn diagram for the fourth Linear Attention post](/assets/images/blog/kda-blog-4.svg)
