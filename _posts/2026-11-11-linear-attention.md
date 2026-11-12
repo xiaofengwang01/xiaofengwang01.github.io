@@ -5,7 +5,7 @@ date: 2026-11-11 00:00:00 +0800
 description: >-
   A concise, hand-drawn guide to representative linear attention papers,
   from kernelized linear attention to gated DeltaNet and Kimi Linear.
-image: /assets/images/blog/social-card.png
+image: /assets/images/blog/linear-attention-social-card.png
 ---
 
 In the age of AI, everything below is handcrafted!!!
