@@ -20,6 +20,11 @@ description: >-
   Personal site and blog about large language model inference,
   attention architectures, and efficient systems.
 
+analytics:
+  # Google Tag ID. It may be a GA4 G-XXXXXXXXXX or a Google Tag GTM-XXXXXXX ID.
+  google_analytics_id: "GTM-NPN9K3J9"
+  show_site_views: true
+
 # Build settings
 markdown: kramdown
 plugins:

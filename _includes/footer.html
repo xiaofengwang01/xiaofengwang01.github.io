@@ -12,5 +12,19 @@
                 </div>
             </div>
         </div>
+        {% if site.analytics.show_site_views %}
+        <div class="text-center text-muted pb-2">
+            <span id="busuanzi_container_site_pv">
+                Total views: <span id="busuanzi_value_site_pv">—</span>
+            </span>
+            <span class="mx-1" aria-hidden="true">·</span>
+            <span id="busuanzi_container_site_uv">
+                Visitors: <span id="busuanzi_value_site_uv">—</span>
+            </span>
+        </div>
+        {% endif %}
     </div>
+    {% if site.analytics.show_site_views %}
+    <script async src="https://busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+    {% endif %}
 </footer>
