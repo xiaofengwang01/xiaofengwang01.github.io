@@ -91,3 +91,86 @@ div.lazy {
 .email-text {
     font-family: Source Code Pro, monospace;
 }
+
+/* Theme toggle */
+.theme-toggle {
+    border: none;
+    background: transparent;
+    cursor: pointer;
+    display: inline-flex;
+    align-items: center;
+    font-size: 1.05rem;
+}
+
+/* Dark theme */
+html[data-theme="dark"] body.bg-light {
+    background-color: #121216 !important;
+}
+
+html[data-theme="dark"] body {
+    color: #d6d6dc;
+}
+
+html[data-theme="dark"] .bg-white {
+    background-color: #1c1c22 !important;
+}
+
+html[data-theme="dark"] .text-muted {
+    color: #9aa0a6 !important;
+}
+
+html[data-theme="dark"] .text-dark {
+    color: #e6e6ea !important;
+}
+
+html[data-theme="dark"] a {
+    color: #6ea8fe;
+}
+
+html[data-theme="dark"] a:hover {
+    color: #9dc2ff;
+}
+
+html[data-theme="dark"] .navbar {
+    background-color: rgba(18, 18, 22, 0.78) !important;
+}
+
+html[data-theme="dark"] .navbar-light .navbar-brand,
+html[data-theme="dark"] .navbar-light .nav-link {
+    color: #c9c9d1;
+}
+
+html[data-theme="dark"] .navbar-light .navbar-brand:hover,
+html[data-theme="dark"] .navbar-light .nav-link:hover {
+    color: #ffffff;
+}
+
+html[data-theme="dark"] .navbar-light .nav-item.active .nav-link,
+html[data-theme="dark"] .navbar-light .nav-item.active .nav-link:hover {
+    color: #ffffff;
+}
+
+html[data-theme="dark"] .navbar-toggler {
+    color: #c9c9d1;
+    border-color: rgba(255, 255, 255, 0.2);
+}
+
+html[data-theme="dark"] .border,
+html[data-theme="dark"] .border-top,
+html[data-theme="dark"] .border-bottom {
+    border-color: #2a2a32 !important;
+}
+
+html[data-theme="dark"] .badge-light {
+    background-color: #2a2a32 !important;
+    color: #c9c9d1;
+}
+
+html[data-theme="dark"] .card {
+    background-color: #1c1c22;
+    border-color: rgba(255, 255, 255, 0.08);
+}
+
+html[data-theme="dark"] .shadow-sm {
+    box-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.3) !important;
+}
