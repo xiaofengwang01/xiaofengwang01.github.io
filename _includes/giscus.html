@@ -5,7 +5,6 @@
         (function () {
             var isZh = (navigator.language || "en").toLowerCase().indexOf("zh") === 0;
             var lang = isZh ? "zh-CN" : "en";
-            var theme = document.documentElement.getAttribute("data-theme") === "dark" ? "dark" : "light";
             document.getElementById("comments-heading").textContent = isZh ? "评论" : "Comments";
 
             var script = document.createElement("script");
@@ -21,19 +20,10 @@
             script.setAttribute("data-reactions-enabled", "1");
             script.setAttribute("data-emit-metadata", "0");
             script.setAttribute("data-input-position", "top");
-            script.setAttribute("data-theme", theme);
+            script.setAttribute("data-theme", "light");
             script.setAttribute("data-lang", lang);
             script.setAttribute("data-loading", "lazy");
             document.querySelector(".giscus").appendChild(script);
-
-            document.addEventListener("themechange", function (event) {
-                var nextTheme = event.detail.theme === "dark" ? "dark" : "light";
-                script.setAttribute("data-theme", nextTheme);
-                var iframe = document.querySelector("iframe.giscus-frame");
-                if (iframe && iframe.contentWindow) {
-                    iframe.contentWindow.postMessage({ giscus: { setConfig: { theme: nextTheme } } }, "https://giscus.app");
-                }
-            });
         })();
     </script>
 </div>
