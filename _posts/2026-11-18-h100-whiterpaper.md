@@ -10,6 +10,8 @@ tags: ["GPU architecture", "H100", "CUDA"]
 
 This post is based on NVIDIA's H100 whitepaper. I want to understand what changed in the Hopper architecture, why those changes matter, and how they fit into modern AI systems.
 
+Reference: [NVIDIA H100 Tensor Core GPU whitepaper](https://resources.nvidia.com/en-us-hopper-architecture/nvidia-h100-tensor-c)
+
 It is written for readers who already know basic CUDA and GPU concepts, but have not yet explored the newer features introduced with the H series.
 
 I will split the discussion into two parts:
