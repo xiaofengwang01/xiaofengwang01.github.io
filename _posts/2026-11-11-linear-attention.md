@@ -1,6 +1,6 @@
 ---
 layout: blog_post
-title: Linear Attention
+title: The Evolution of Linear Attention:From Linear Transformers to Kimi Linear
 date: 2026-11-11 00:00:00 +0800
 description: >-
   A concise, hand-drawn guide to representative linear attention papers,
